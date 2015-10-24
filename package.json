@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdsteinbach/sassconf",
+    "url": "https://github.com/jdsteinbach/sassconf"
+  },
+  "bugs": {
+    "url": "https://github.com/jdsteinbach/sassconf/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
