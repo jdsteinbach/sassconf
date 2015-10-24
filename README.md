@@ -1,2 +1,3 @@
-# sassconf
-Using Musical Scales to Build Harmonious Typography: Slides for SassConf 2015
+# Using Musical Scales to Build Harmonious Typography
+
+*Slides for SassConf 2015*

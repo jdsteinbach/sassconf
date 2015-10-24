@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Using Musical Scales to Build Harmonious Typography</title>
+
+    <meta name="description" content="SassConf 2015">
+    <meta name="author" content="James Steinbach">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+
+    <script src="https://use.typekit.net/ctg6kow.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+<section>
+<h1 id="-small-using-small-musical-scales-small-to-build-small-harmonious-typography"><small>Using</small> Musical Scales <small>to Build</small> Harmonious Typography</h1>
+
+</section>
+
+<section>
+
+<section>
+
+<h2 id="musical-intervals-math">Musical Intervals <span class="amp">&amp;</span> Math</h2>
+
+</section>
+
+<section>
+
+<h3 id="every-musical-note-is-a-number">Every musical note is a number</h3>
+<p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+
+</section>
+
+<section>
+
+<h3 id="between-any-octave-on-a-musical-scale-the-frequency-doubles-">Between any octave on a musical scale, the frequency doubles.</h3>
+<table>
+<thead>
+<tr>
+<th>Concert A = 440Hz</th>
+<th>A<sup>5</sup> = 880Hz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Middle C ~= 131Hz</td>
+<td>C<sup>4</sup> ~=262Hz</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section>
+
+<h3 id="every-fifth-is-1-5-times-">Every fifth is ~1.5&times;.</h3>
+<table>
+<thead>
+<tr>
+<th>A<sup>3</sup> = 220Hz</th>
+<th>E<sup>4</sup> ~=330Hz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section>
+
+<h3 id="every-half-step-is-a-1-0595-times-increase-">Every half-step is a 1.0595&times; increase.</h3>
+<p>Every half-step (the building block of Western scales) is a 1.0595&times; increase.</p>
+<p>All other intervals work as exponents of the half-step interval.</p>
+<ul>
+<li>A (440Hz) &times; 1.0595 = A<sup>#</sup> (466.16Hz) &times; 1.0595 = B (493.88Hz)</li>
+<li>A (440Hz) &times; 1.0559<sup>2</sup> = B (493.88Hz)</li>
+</ul>
+
+</section>
+
+</section>
+
+<section>
+
+<section>
+
+<h2 id="typography-modular-scales">Typography <span class="amp">&amp;</span> Modular Scales</h2>
+
+</section>
+
+<section>
+
+<h3 id="current-state-of-modular-scale-sass-libraries">Current state of modular scale Sass libraries</h3>
+<ul>
+<li><a href="http://www.modularscale.com/">Modular Scale</a></li>
+<li><a href="https://sassline.com/">Sassline</a></li>
+<li><a href="http://typesettings.io/">Typesettings</a></li>
+<li><a href="http://type-scale.com/">Type Scale</a></li>
+<li><a href="http://www.gridlover.net/">Gridlover</a></li>
+<li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="literal-modular-scales">Literal modular scales</h3>
+<ul>
+<li>Every interval is the same</li>
+<li>A musical half-step scale is literally modular <em>~play half-step scale~</em></li>
+<li>A musical whole-step scale is literally modular <em>~play whole-step scale~</em></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="non-literal-quasi-modular-scales">Non-literal / quasi-modular scales</h3>
+<ul>
+<li>Major <span class="amp">&amp;</span> minor scales are created by alternating whole- <span class="amp">&amp;</span> half-step scales (WWHWWWH) / (WHWWHWW)</li>
+<li>These patterns repeat every octave, creating a non-literal / organic modular scale.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="non-literal-quasi-modular-scales">Non-literal / quasi-modular scales</h3>
+<p>ALA article above briefly discusses a “double-stranded modular scale” which also avoids the single increment limit of literal modular scales, but is less adjustable than music-based type scales.</p>
+
+</section>
+
+</section>
+
+<section>
+
+<section>
+
+<h2 id="see-hear">See <span class="amp">&amp;</span> Hear</h2>
+
+</section>
+
+<section>
+
+<h3 id="single-intervals">Single Intervals</h3>
+<h4 id="octave">Octave</h4>
+<h4 id="fifth">Fifth</h4>
+<h4 id="major-third">Major Third</h4>
+
+</section>
+
+<section>
+
+<h3 id="scales">Scales</h3>
+<h4 id="major-scale">Major-scale</h4>
+<h4 id="pentatonic">Pentatonic</h4>
+<h4 id="major-triad">Major Triad</h4>
+
+</section>
+
+<section>
+
+<h3 id="responsive-musical-scales">Responsive musical scales</h3>
+<ul>
+<li>By decreasing the number of notes per octave, you can increase font sizes more quickly, taking advantage of larger screens.</li>
+<li>By increasing the number of notes per octave, you can slow the growth of font sizes, keeping content visible on small screens.</li>
+</ul>
+
+</section>
+
+</section>
+
+<section>
+
+<section>
+
+<h2 id="intro-to-typetuner">Intro to TypeTuner</h2>
+
+</section>
+
+<section>
+ id="point-audience-to-my-typetuner-http-typetuner-com-library-quickly-overview-public-functions-mixins">Point audience to my <a href="http://typetuner.com">TypeTuner</a> library <span class="amp">&amp;</span> quickly overview public functions/mixins</h3>
+
+</section>
+
+</section>
+
+<section>
+
+<section>
+
+<h2 id="thanks-">Thanks!</h2>
+
+</section>
+
+<section>
+
+<h3 id="james-steinbach">James Steinbach</h3>
+<p><a href="https://twitter.com/jdsteinbach">@jdsteinbach</a></p>
+<p><a href="https://jdsteinbach.com">jdsteinbach.com</a></p>
+
+</section>
+
+</section>
+</div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        width: 960,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/zoom-js/zoom.js', async: true }
+        ]
+
+      });
+
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-43397146-5', 'auto'); ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
