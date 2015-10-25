@@ -2,29 +2,44 @@
   'use strict';
 
   /* Required packages */
-  var gulp        = require('gulp');
-  var glob        = require('glob');
-  var browserSync = require('browser-sync');
-  var reload      = browserSync.reload;
-  var sass        = require('gulp-sass');
-  var sourcemaps  = require('gulp-sourcemaps');
-  var reveal      = require('gulp-reveal');
-  var markdown    = require('gulp-markdown');
+  var gulp         = require('gulp');
+  var glob         = require('glob');
+  var browserSync  = require('browser-sync');
+  var reload       = browserSync.reload;
+  var sass         = require('gulp-sass');
+  var sourcemaps   = require('gulp-sourcemaps');
+  var reveal       = require('gulp-reveal');
+  var markdown     = require('gulp-markdown');
+  var postcss      = require('gulp-postcss');
+  var autoprefixer = require('autoprefixer');
+  var sorter       = require('postcss-property-sorter');
 
   /* Environment variables */
-  var _src_dir  = 'css/';
+  var _assets_dir = 'assets/';
+  var _css_dir    = _assets_dir + 'css/';
+  var _md_dir     = _assets_dir + 'md/';
 
   gulp.task('sass', function() {
-    gulp.src(_src_dir + 'reveal.scss')
+    var processors = [
+      sorter({
+        plan: 'csscomb'
+      }),
+      autoprefixer({
+        browsers: ['last 3 versions'],
+        cascade: false
+      })
+    ];
+    gulp.src(_css_dir + 'reveal.scss')
       .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'expanded'}))
       .pipe(sourcemaps.write())
-      .pipe(gulp.dest(_src_dir))
+      .pipe(postcss(processors))
+      .pipe(gulp.dest(_css_dir))
       .pipe(reload({stream: true}));
   });
 
   gulp.task('md', function() {
-    gulp.src('index.md')
+    gulp.src(_md_dir + 'index.md')
       .pipe(markdown())
       .pipe(reveal({
         title: 'Using Musical Scales to Build Harmonious Typography',
@@ -43,11 +58,13 @@
     });
   });
 
+  gulp.task('build', ['md', 'sass',]);
+
   gulp.task('watch', ['md', 'sass', 'serve'], function() {
-    gulp.watch(_src_dir + '**/*.scss', ['sass']);
-    gulp.watch('**/*.{html,js}').on('change', reload);
-    gulp.watch('**/*.{md,mustache}', ['md']);
+    gulp.watch(_css_dir + '**/*.scss', ['sass']);
+    gulp.watch(_md_dir + '**/*.md', ['md']);
+    gulp.watch('index.html').on('change', reload);
   });
 
-  gulp.task('default', ['serve']);
+  gulp.task('default', ['watch']);
 }());
