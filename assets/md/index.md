@@ -2,22 +2,34 @@
 
 ## Musical Intervals & Math
 
-### Every musical note is a number
+### Every <em>Note</em><br> Is a <em>Number</em>
+
+![images/trombone.gif](images/trombone.gif)
+
+### Every <em>Note</em><br> Is a <em>Number</em>
+
+![images/harp.gif](images/harp.gif)
+
+### Every <em>Note</em><br> Is a <em>Number</em>
+
+![images/xylophone.gif](images/xylophone.gif)
+
+### Every <em>Note</em><br> Is a <em>Number</em>
 
 Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).
 
-### Between any octave on a musical scale, the frequency doubles.
+### Every <em>Octave</em>,<br> the <em>Frequency</em> Doubles
 
 | Concert A = 440Hz | A<sup>5</sup> = 880Hz |
 | --- | --- |
 | Middle C ~= 131Hz | C<sup>4</sup> ~=262Hz |
 
-### Every fifth is ~1.5&times;.
+### Every <em>Fifth</em><br> Increases <em>~1.5</em>&times;
 
 | A<sup>3</sup> = 220Hz | E<sup>4</sup> ~=330Hz |
 | --- | --- |
 
-### Every half-step is a 1.0595&times; increase.
+### Every <em>Half-Step</em> Increases <em>1.0595</em>&times;
 
 Every half-step (the building block of Western scales) is a 1.0595&times; increase.
 
@@ -77,7 +89,9 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ## Intro to TypeTuner
 
-### Point audience to my [TypeTuner](http://typetuner.com) library & quickly overview public functions/mixins
+### TypeTuner
+
+Point audience to my [TypeTuner library](http://typetuner.com) &amp; quickly overview public functions/mixins
 
 ## Thanks!
 

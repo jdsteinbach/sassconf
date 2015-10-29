@@ -54,16 +54,22 @@ body {
 }
 
 .reveal h3 {
-	font-weight: bold;
-	font-variant: small-caps;
+	// font-weight: bold;
 	font-feature-settings: "kern", "liga", "smcp", "pnum";
 	margin: $headingMargin;
+	text-transform: lowercase;
+
+	em {
+		font-family: $headingFont;
+		font-feature-settings: "kern", "liga", "pnum";
+		text-transform: none;
+	}
 }
 
 .reveal h1 {font-size: $heading1Size; }
 .reveal h2 {font-size: $heading2Size; }
-.reveal h3 {font-size: $heading3Size; }
-.reveal h4 {font-size: $heading4Size; }
+.reveal h3 {font-size: $heading2Size; }
+.reveal h4 {font-size: $heading3Size; }
 
 .reveal h1 {
 	text-shadow: $heading1TextShadow;
@@ -261,7 +267,8 @@ body {
  *********************************************/
 
 .reveal section img {
-	margin: 15px 0px;
+	display: block;
+	margin: 15px auto;
 	background: rgba(255,255,255,0.12);
 	border: 4px solid $mainColor;
 
