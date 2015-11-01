@@ -4,13 +4,15 @@
 
 ### Every <em>Note</em><br> Is a <em>Number</em>
 
+---
+
 ![images/trombone.gif](images/trombone.gif)
 
-### Every <em>Note</em><br> Is a <em>Number</em>
+---
 
 ![images/harp.gif](images/harp.gif)
 
-### Every <em>Note</em><br> Is a <em>Number</em>
+---
 
 ![images/xylophone.gif](images/xylophone.gif)
 
@@ -18,16 +20,26 @@
 
 Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).
 
-### Every <em>Octave</em>,<br> the <em>Frequency</em> Doubles
+### Every <em>Octave</em><br> Increases <em>2</em>&times;
 
 | Concert A = 440Hz | A<sup>5</sup> = 880Hz |
 | --- | --- |
 | Middle C ~= 131Hz | C<sup>4</sup> ~=262Hz |
 
-### Every <em>Fifth</em><br> Increases <em>~1.5</em>&times;
+---
+
+![images/wave.svg](images/wave.svg)
+![images/wave-x2.svg](images/wave-x2.svg)
+
+### Every <em>Fifth</em><br> Increases ~<em>1.5</em>&times;
 
 | A<sup>3</sup> = 220Hz | E<sup>4</sup> ~=330Hz |
 | --- | --- |
+
+---
+
+![images/wave.svg](images/wave.svg)
+![images/wave-x1.5.svg](images/wave-x1.5.svg)
 
 ### Every <em>Half-Step</em> Increases <em>1.0595</em>&times;
 
@@ -40,7 +52,7 @@ All other intervals work as exponents of the half-step interval.
 
 ## Typography & Modular Scales
 
-### Current state of modular scale Sass libraries
+### <em>Modular Scales</em><br> in <em>Sass</em>
 
   * [Modular Scale](http://www.modularscale.com/)
   * [Sassline](https://sassline.com/)
@@ -49,7 +61,7 @@ All other intervals work as exponents of the half-step interval.
   * [Gridlover](http://www.gridlover.net/)
   * [ALA: More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography)
 
-### Literal modular scales
+### Literal<br> <em>Modular Scales</em>
 
   * Every interval is the same
   * A musical half-step scale is literally modular *~play half-step scale~*

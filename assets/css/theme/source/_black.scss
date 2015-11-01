@@ -64,6 +64,13 @@ section.has-light-background {
 	-moz-osx-font-smoothing: antialiased;
 	text-shadow: .05em .05em .05em rgba(black, .75);
 
+	img {
+		&[src*="wave"] {
+			width: 814px;
+			height: 188px;
+			background-color: #222;
+		}
+	}
 	.amp {
 		font-style: italic;
 	}

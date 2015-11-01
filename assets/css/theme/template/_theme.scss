@@ -269,8 +269,8 @@ body {
 .reveal section img {
 	display: block;
 	margin: 15px auto;
-	background: rgba(255,255,255,0.12);
-	border: 4px solid $mainColor;
+	background: rgba($mainColor,.125);
+	border: 12px solid rgba($mainColor,.125);
 
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
