@@ -78,21 +78,56 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ## See & Hear
 
-### Single Intervals
+### Interval: Octave
 
-#### Octave
+<div class="text-block octave">
+  <p class="heading-octave">Notes Are Numbers</p>
+  <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
 
-#### Fifth
+### Interval: Fifth
 
-#### Major Third
+<div class="text-block fifth">
+  <p class="heading-fifth">Notes Are Numbers</p>
+  <p class="paragraph-fifth">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
 
-### Scales
+### Interval: Major Third
 
-#### Major-scale
+<div class="text-block third">
+  <p class="heading-third">Notes Are Numbers</p>
+  <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
 
-#### Pentatonic
+### Scale: Major Scale
 
-#### Major Triad
+<div class="text-block major-scale">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
+  <p class="heading-4">Heading 4</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
+
+### Scale: Pentatonic
+
+<div class="text-block major-scale">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
+
+### Scale: Major Triad
+
+<div class="text-block major-scale">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
 
 ### Responsive musical scales
 
