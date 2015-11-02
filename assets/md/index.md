@@ -105,14 +105,13 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
   <p class="heading-3">Heading 3</p>
-  <p class="heading-4">Heading 4</p>
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
 
 ### Scale: Pentatonic
 
-<div class="text-block major-scale">
+<div class="text-block pentatonic">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
   <p class="heading-3">Heading 3</p>
@@ -122,9 +121,10 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Scale: Major Triad
 
-<div class="text-block major-scale">
+<div class="text-block major-triad">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>

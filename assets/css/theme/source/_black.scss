@@ -188,68 +188,64 @@ section.has-light-background {
 	}
 
 	.major-scale {
-		&.heading-1 {
-
+		.heading-1 {
+			font-size: 3/2 * 100%;
 		}
 
-		&.heading-2 {
-
+		.heading-2 {
+			font-size: 4/3 * 100%;
 		}
 
-		&.heading-3 {
-
+		.heading-3 {
+			font-size: 5/4 * 100%;
 		}
 
-		&.blockquote {
-
+		.blockquote {
+			font-size: 9/8 * 100%;
 		}
 
-		&.paragraph {
+		.paragraph {
 
 		}
 	}
 
 	.pentatonic {
-		&.heading-1 {
-
+		.heading-1 {
+			font-size: 5/3 * 100%;
 		}
 
-		&.heading-2 {
-
+		.heading-2 {
+			font-size: 3/2 * 100%;
 		}
 
-		&.heading-3 {
-
+		.heading-3 {
+			font-size: 5/4 * 100%;
 		}
 
-		&.blockquote {
-
-		}
-
-		&.paragraph {
-
+		.blockquote {
+			font-size: 9/8 * 100%;
 		}
 	}
 
 	.major-triad {
-		&.heading-1 {
-
+		.heading-1 {
+			font-size: 5/4 * 2 * 100%;
 		}
 
-		&.heading-2 {
-
+		.heading-2 {
+			font-size: 2 * 100%;
 		}
 
-		&.heading-3 {
-
+		.heading-3 {
+			font-size: 3/2 * 100%;
 		}
 
-		&.blockquote {
-
+		.blockquote {
+			font-size: 5/4 * 100%;
 		}
 
-		&.paragraph {
-
+		p {
+			margin-top: 0;
 		}
 	}
 
