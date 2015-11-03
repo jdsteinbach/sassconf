@@ -84,6 +84,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="heading-octave">Notes Are Numbers</p>
   <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
+<button id="interval-octave" class="play-button">Play</button>
 
 ### Interval: Fifth
 
@@ -91,13 +92,15 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="heading-fifth">Notes Are Numbers</p>
   <p class="paragraph-fifth">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
+<button id="interval-fifth" class="play-button">Play</button>
 
-### Interval: Major Third
+### Interval: Third
 
 <div class="text-block third">
   <p class="heading-third">Notes Are Numbers</p>
   <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
+<button id="interval-third" class="play-button">Play</button>
 
 ### Scale: Major Scale
 
@@ -108,6 +111,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
+<button id="scale-major" class="play-button">Play</button>
 
 ### Scale: Pentatonic
 
@@ -118,6 +122,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
+<button id="scale-pentatonic" class="play-button">Play</button>
 
 ### Scale: Major Triad
 
@@ -128,6 +133,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
+<button id="scale-major-triad" class="play-button">Play</button>
 
 ### Responsive musical scales
 
