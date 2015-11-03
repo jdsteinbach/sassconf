@@ -158,13 +158,12 @@ section.has-light-background {
 	.play-button {
 		-webkit-appearance: none;
 		position: absolute;
-		bottom: -2em;
-		left: -2em;
+		bottom: 2em;
+		left: 0;
 		border: none;
 		outline: none;
 		opacity: .25;
 		color: $mainColor;
-		background-color: $backgroundColor;
 		font-size: $mainFontSize/1.618;
 		font-family: $mainFont;
 		text-transform: uppercase;
@@ -173,10 +172,12 @@ section.has-light-background {
 		overflow: hidden;
 		padding: 0;
 		line-height: 1;
-		background: url(../../images/play.svg) no-repeat center;
+		background: transparent url(../../images/play.svg) no-repeat center;
 		background-size: contain;
-		height: 2em;
-		width: 2em;
+		box-shadow: none;
+		height: 1.618em;
+		width: 1.618em;
+		transition: opacity .25s;
 
 		&:hover,
 		&:active,
@@ -194,6 +195,34 @@ section.has-light-background {
 		background: #222;
 		border: 12px solid rgba($mainColor,.125);
 
+		&.scale {
+			// font-size: $mainFontSize*.618;
+			padding-left: 3em;
+			max-width: 18em;
+
+			p {
+				margin-top: .618em * .5;
+				position: relative;
+
+				&::before {
+					display: inline-block;
+					width: auto;
+					height: 1.618em;
+					position: absolute;
+					// top: 50%;
+					right: 100%;
+					bottom: 37%;
+					padding-right: 1.5em;
+					text-align: right;
+					font-size: $mainFontSize * .618;
+					font-family: -apple-system, sans-serif;
+					color: white;
+					opacity: .75;
+					transform: translateY(50%);
+				}
+			}
+		}
+
 		p {
 			max-width: 100%;
 			margin: 1em 0 0;
@@ -201,6 +230,14 @@ section.has-light-background {
 			&:first-child {
 				margin-top: 0;
 			}
+		}
+	}
+
+	@mixin font-content($ratio) {
+		$ratio: round( $ratio*100 ) / 100;
+		font-size: $ratio * 100%;
+		&::before {
+			content: " #{$ratio * 20}";
 		}
 	}
 
@@ -214,69 +251,73 @@ section.has-light-background {
 		}
 
 		&.heading-third {
-			font-size: 200%;
+			font-size: 5/4 * 100%;
 		}
 	}
 
 	.major-scale {
 		.heading-1 {
-			font-size: 3/2 * 100%;
+			@include font-content( 3/2 );
 		}
 
 		.heading-2 {
-			font-size: 4/3 * 100%;
+			@include font-content( 4/3 );
 		}
 
 		.heading-3 {
-			font-size: 5/4 * 100%;
+			@include font-content( 5/4 );
 		}
 
 		.blockquote {
-			font-size: 9/8 * 100%;
+			@include font-content( 9/8 );
 		}
 
 		.paragraph {
-
+			@include font-content(1);
 		}
 	}
 
 	.pentatonic {
 		.heading-1 {
-			font-size: 5/3 * 100%;
+			@include font-content( 5/3 );
 		}
 
 		.heading-2 {
-			font-size: 3/2 * 100%;
+			@include font-content( 3/2 );
 		}
 
 		.heading-3 {
-			font-size: 5/4 * 100%;
+			@include font-content( 5/4 );
 		}
 
 		.blockquote {
-			font-size: 9/8 * 100%;
+			@include font-content( 9/8 );
+		}
+
+		.paragraph {
+			@include font-content(1);
 		}
 	}
 
 	.major-triad {
 		.heading-1 {
-			font-size: 5/4 * 2 * 100%;
+			@include font-content( 5/4 * 2 );
 		}
 
 		.heading-2 {
-			font-size: 2 * 100%;
+			@include font-content( 2 );
 		}
 
 		.heading-3 {
-			font-size: 3/2 * 100%;
+			@include font-content( 3/2 );
 		}
 
 		.blockquote {
-			font-size: 5/4 * 100%;
+			@include font-content( 5/4 );
 		}
 
-		p {
-			margin-top: 0;
+		.paragraph {
+			@include font-content(1);
 		}
 	}
 

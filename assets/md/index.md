@@ -80,7 +80,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Interval: Octave
 
-<div class="text-block octave">
+<div class="text-block interval octave">
   <p class="heading-octave">Notes Are Numbers</p>
   <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
@@ -88,7 +88,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Interval: Fifth
 
-<div class="text-block fifth">
+<div class="text-block interval fifth">
   <p class="heading-fifth">Notes Are Numbers</p>
   <p class="paragraph-fifth">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
@@ -96,7 +96,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Interval: Third
 
-<div class="text-block third">
+<div class="text-block interval third">
   <p class="heading-third">Notes Are Numbers</p>
   <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div>
@@ -104,7 +104,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Scale: Major Scale
 
-<div class="text-block major-scale">
+<div class="text-block scale major-scale">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
   <p class="heading-3">Heading 3</p>
@@ -115,7 +115,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Scale: Pentatonic
 
-<div class="text-block pentatonic">
+<div class="text-block scale pentatonic">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
   <p class="heading-3">Heading 3</p>
@@ -126,7 +126,7 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ### Scale: Major Triad
 
-<div class="text-block major-triad">
+<div class="text-block scale major-triad">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
   <p class="heading-3">Heading 3</p>
