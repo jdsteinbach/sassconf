@@ -63,6 +63,7 @@
   gulp.task('watch', ['md', 'sass', 'serve'], function() {
     gulp.watch(_css_dir + '**/*.scss', ['sass']);
     gulp.watch(_md_dir + '**/*.md', ['md']);
+    gulp.watch('**/*.mustache', ['md']);
     gulp.watch('index.html').on('change', reload);
   });
 

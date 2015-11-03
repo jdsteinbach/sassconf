@@ -78,21 +78,62 @@ ALA article above briefly discusses a “double-stranded modular scale” which 
 
 ## See & Hear
 
-### Single Intervals
+### Interval: Octave
 
-#### Octave
+<div class="text-block interval octave">
+  <p class="heading-octave">Notes Are Numbers</p>
+  <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
+<button id="interval-octave" class="play-button">Play</button>
 
-#### Fifth
+### Interval: Fifth
 
-#### Major Third
+<div class="text-block interval fifth">
+  <p class="heading-fifth">Notes Are Numbers</p>
+  <p class="paragraph-fifth">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
+<button id="interval-fifth" class="play-button">Play</button>
 
-### Scales
+### Interval: Third
 
-#### Major-scale
+<div class="text-block interval third">
+  <p class="heading-third">Notes Are Numbers</p>
+  <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
+</div>
+<button id="interval-third" class="play-button">Play</button>
 
-#### Pentatonic
+### Scale: Major Scale
 
-#### Major Triad
+<div class="text-block scale major-scale">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
+<button id="scale-major" class="play-button">Play</button>
+
+### Scale: Pentatonic
+
+<div class="text-block scale pentatonic">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
+<button id="scale-pentatonic" class="play-button">Play</button>
+
+### Scale: Major Triad
+
+<div class="text-block scale major-triad">
+  <p class="heading-1">Heading 1</p>
+  <p class="heading-2">Heading 2</p>
+  <p class="heading-3">Heading 3</p>
+  <p class="blockquote">Blockquote</p>
+  <p class="paragraph">Paragraph</p>
+</div>
+<button id="scale-major-triad" class="play-button">Play</button>
 
 ### Responsive musical scales
 
