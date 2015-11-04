@@ -57,6 +57,7 @@
 <section>
 
 <h3 id="every-em-note-em-br-is-a-em-number-em-">Every <em>Note</em><br> Is a <em>Number</em></h3>
+<p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </section><section>
 <p><img src="images/trombone.gif" alt="images/trombone.gif"></p>
 </section><section>
@@ -68,14 +69,7 @@
 
 <section>
 
-<h3 id="every-em-note-em-br-is-a-em-number-em-">Every <em>Note</em><br> Is a <em>Number</em></h3>
-<p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
-
-</section>
-
-<section>
-
-<h3 id="every-em-octave-em-br-increases-em-2-em-times-">Every <em>Octave</em><br> Increases <em>2</em>&times;</h3>
+<h3 id="an-em-octave-em-br-increases-em-2-em-times-">An <em>Octave</em><br> Increases <em>2</em>&times;</h3>
 <table>
 <thead>
 <tr>
@@ -98,7 +92,7 @@
 
 <section>
 
-<h3 id="every-em-fifth-em-br-increases-em-1-5-em-times-">Every <em>Fifth</em><br> Increases ~<em>1.5</em>&times;</h3>
+<h3 id="a-em-fifth-em-br-increases-em-1-5-em-times-">A <em>Fifth</em><br> Increases ~<em>1.5</em>&times;</h3>
 <table>
 <thead>
 <tr>
@@ -108,7 +102,8 @@
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>C<sup>3</sup> ~= 131Hz</td>
+<td>G<sup>3</sup> ~=196Hz</td>
 </tr>
 </tbody>
 </table>
@@ -120,13 +115,44 @@
 
 <section>
 
-<h3 id="every-em-half-step-em-increases-em-1-0595-em-times-">Every <em>Half-Step</em> Increases <em>1.0595</em>&times;</h3>
-<p>Every half-step (the building block of Western scales) is a 1.0595&times; increase.</p>
-<p>All other intervals work as exponents of the half-step interval.</p>
-<ul>
-<li>A (440Hz) &times; 1.0595 = A<sup>#</sup> (466.16Hz) &times; 1.0595 = B (493.88Hz)</li>
-<li>A (440Hz) &times; 1.0559<sup>2</sup> = B (493.88Hz)</li>
-</ul>
+<h3 id="a-em-half-step-em-increases-em-1-0595-em-times-">A <em>Half-Step</em> Increases <em>1.0595</em>&times;</h3>
+<p>The half-step is the building block of scales.</p>
+<p>All intervals are exponents of the half-step.</p>
+</section><section>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">A (440Hz)</th>
+<th style="text-align:center">&times;</th>
+<th style="text-align:center">1.0595</th>
+<th style="text-align:center">=</th>
+<th style="text-align:center">A<sup>#</sup> (466.16Hz)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A<sup>#</sup> (466.16Hz)</td>
+<td style="text-align:center">&times;</td>
+<td style="text-align:center">1.0595</td>
+<td style="text-align:center">=</td>
+<td style="text-align:center">B (493.88Hz)</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">A (440Hz)</td>
+<td style="text-align:center">&times;</td>
+<td style="text-align:center">1.0595<sup>2</sup></td>
+<td style="text-align:center">=</td>
+<td style="text-align:center">B (493.88Hz)</td>
+</tr>
+</tbody>
+</table>
 
 </section>
 
@@ -142,21 +168,7 @@
 
 <section>
 
-<h3 id="-em-modular-scales-em-br-in-em-sass-em-"><em>Modular Scales</em><br> in <em>Sass</em></h3>
-<ul>
-<li><a href="http://www.modularscale.com/">Modular Scale</a></li>
-<li><a href="https://sassline.com/">Sassline</a></li>
-<li><a href="http://typesettings.io/">Typesettings</a></li>
-<li><a href="http://type-scale.com/">Type Scale</a></li>
-<li><a href="http://www.gridlover.net/">Gridlover</a></li>
-<li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a></li>
-</ul>
-
-</section>
-
-<section>
-
-<h3 id="literal-br-em-modular-scales-em-">Literal<br> <em>Modular Scales</em></h3>
+<h3 id="-em-literal-em-span-modular-scales-span-"><em>Literal</em> <span>Modular Scales</span></h3>
 <ul>
 <li>Every interval is the same</li>
 <li>A musical half-step scale is literally modular <em>~play half-step scale~</em></li>
@@ -167,8 +179,9 @@
 
 <section>
 
-<h3 id="non-literal-quasi-modular-scales">Non-literal / quasi-modular scales</h3>
+<h3 id="-em-non-literal-em-span-modular-scales-span-"><em>Non-Literal</em> <span>Modular Scales</span></h3>
 <ul>
+<li>“Quasi-Modular” or “Organic Modular”</li>
 <li>Major &amp; minor scales are created by alternating whole- &amp; half-step scales (WWHWWWH) / (WHWWHWW)</li>
 <li>These patterns repeat every octave, creating a non-literal / organic modular scale.</li>
 </ul>
@@ -177,8 +190,15 @@
 
 <section>
 
-<h3 id="non-literal-quasi-modular-scales">Non-literal / quasi-modular scales</h3>
-<p>ALA article above briefly discusses a “double-stranded modular scale” which also avoids the single increment limit of literal modular scales, but is less adjustable than music-based type scales.</p>
+<h3 id="-em-modular-scales-em-br-in-em-sass-em-"><em>Modular Scales</em><br> in <em>Sass</em></h3>
+<ul>
+<li><a href="http://www.modularscale.com/">Modular Scale</a></li>
+<li><a href="https://sassline.com/">Sassline</a></li>
+<li><a href="http://typesettings.io/">Typesettings</a></li>
+<li><a href="http://type-scale.com/">Type Scale</a></li>
+<li><a href="http://www.gridlover.net/">Gridlover</a></li>
+<li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a> (“double-stranded” modular scale)</li>
+</ul>
 
 </section>
 
@@ -194,7 +214,7 @@
 
 <section>
 
-<h3 id="interval-octave">Interval: Octave</h3>
+<h3 id="interval-em-octave-em-">Interval: <em>Octave</em></h3>
 <p><div class="text-block interval octave">
   <p class="heading-octave">Notes Are Numbers</p>
   <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
@@ -206,7 +226,7 @@
 
 <section>
 
-<h3 id="interval-fifth">Interval: Fifth</h3>
+<h3 id="interval-em-fifth-em-">Interval: <em>Fifth</em></h3>
 <p><div class="text-block interval fifth">
   <p class="heading-fifth">Notes Are Numbers</p>
   <p class="paragraph-fifth">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
@@ -218,7 +238,7 @@
 
 <section>
 
-<h3 id="interval-third">Interval: Third</h3>
+<h3 id="interval-em-third-em-">Interval: <em>Third</em></h3>
 <p><div class="text-block interval third">
   <p class="heading-third">Notes Are Numbers</p>
   <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
@@ -230,7 +250,7 @@
 
 <section>
 
-<h3 id="scale-major-scale">Scale: Major Scale</h3>
+<h3 id="scale-em-major-scale-em-">Scale: <em>Major Scale</em></h3>
 <p><div class="text-block scale major-scale">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
@@ -245,7 +265,7 @@
 
 <section>
 
-<h3 id="scale-pentatonic">Scale: Pentatonic</h3>
+<h3 id="scale-em-pentatonic-em-">Scale: <em>Pentatonic</em></h3>
 <p><div class="text-block scale pentatonic">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
@@ -260,7 +280,7 @@
 
 <section>
 
-<h3 id="scale-major-triad">Scale: Major Triad</h3>
+<h3 id="scale-em-major-triad-em-">Scale: <em>Major Triad</em></h3>
 <p><div class="text-block scale major-triad">
   <p class="heading-1">Heading 1</p>
   <p class="heading-2">Heading 2</p>
@@ -275,11 +295,9 @@
 
 <section>
 
-<h3 id="responsive-musical-scales">Responsive musical scales</h3>
-<ul>
-<li>By decreasing the number of notes per octave, you can increase font sizes more quickly, taking advantage of larger screens.</li>
-<li>By increasing the number of notes per octave, you can slow the growth of font sizes, keeping content visible on small screens.</li>
-</ul>
+<h3 id="-em-responsive-em-musical-scales"><em>Responsive</em> Musical Scales</h3>
+<p>More notes per octave: better for small screens</p>
+<p>Fewer notes per octave: better for large screens</p>
 
 </section>
 
@@ -295,9 +313,18 @@
 
 <section>
 
-<h3 id="typetuner">TypeTuner</h3>
-<p>Point audience to my <a href="http://typetuner.com">TypeTuner library</a> &amp; quickly overview public functions/mixins</p>
-
+<h3 id="typetuner-com">TypeTuner.com</h3>
+<pre><code>@include set-hierarchy( $list );
+@include add-breakpoint(
+  $label,
+  $min-width,
+  $font-size,
+  $line-height,
+  $scale
+);
+@include remove-breakpoint( $label );
+@include type-tune( extend | class );
+</code></pre>
 </section>
 
 </section>
@@ -313,8 +340,20 @@
 <section>
 
 <h3 id="james-steinbach">James Steinbach</h3>
-<p><a href="https://twitter.com/jdsteinbach">@jdsteinbach</a></p>
 <p><a href="https://jdsteinbach.com">jdsteinbach.com</a></p>
+<p><a href="https://twitter.com/jdsteinbach/">@jdsteinbach</a></p>
+<p><a href="https://github.com/jdsteinbach/">github.com/jdsteinbach</a></p>
+
+</section>
+
+<section>
+
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="http://typetuner.com">typetuner.com</a></li>
+<li><a href="http://jdsteinbach.com/sassconf/">jdsteinbach.com/sassconf</a></li>
+<li><a href="http://webtypography.net">webtypography.net</a></li>
+</ul>
 
 </section>
 

@@ -63,6 +63,11 @@ body {
 		font-family: $headingFont;
 		font-feature-settings: "kern", "liga", "pnum";
 		text-transform: none;
+
+		~ span {
+			display: block;
+			margin-top: -.616em * .618;
+		}
 	}
 }
 
@@ -134,6 +139,9 @@ body {
 	margin-left: 40px;
 }
 
+.reveal li {
+	margin-bottom: .618 * .618em;
+}
 .reveal dt {
 	font-weight: bold;
 }

@@ -44,7 +44,7 @@ $heading3Size: 1.618em;
 $heading4Size: 1.0em;
 
 $blockMargin: $mainFontSize * .618;
-$headingMargin: 0 0 $blockMargin;
+$headingMargin: 0 0 $mainFontSize * 1.618;
 
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -130,6 +130,12 @@ section.has-light-background {
 		margin-top: 0 !important;
 	}
 
+	td:empty {
+		height: .1618em;
+		padding: 0;
+		background-color: $mainColor;
+	}
+
 	.big-p {
 		font-size: $heading1Size;
 		font-weight: bold;
@@ -190,7 +196,7 @@ section.has-light-background {
 	.text-block {
 		text-align: left;
 		max-width: 20em;
-		margin: 0 auto;
+		margin: -1em auto 0;
 		padding: 1em;
 		background: #222;
 		border: 12px solid rgba($mainColor,.125);
@@ -201,7 +207,7 @@ section.has-light-background {
 			max-width: 18em;
 
 			p {
-				margin-top: .618em * .5;
+				margin-top: 0;
 				position: relative;
 
 				&::before {
@@ -209,13 +215,12 @@ section.has-light-background {
 					width: auto;
 					height: 1.618em;
 					position: absolute;
-					// top: 50%;
 					right: 100%;
 					bottom: 37%;
 					padding-right: 1.5em;
 					text-align: right;
 					font-size: $mainFontSize * .618;
-					font-family: -apple-system, sans-serif;
+					font-family: caption, -apple-system, sans-serif;
 					color: white;
 					opacity: .75;
 					transform: translateY(50%);
@@ -252,6 +257,17 @@ section.has-light-background {
 
 		&.heading-third {
 			font-size: 5/4 * 100%;
+		}
+	}
+
+	[id="james-steinbach"] {
+		@extend h2;
+		text-transform: none;
+		font-feature-settings: "kern", "liga", "pnum";
+
+		~ p {
+			text-align: center;
+			font-size: 161.8%;
 		}
 	}
 
@@ -321,52 +337,7 @@ section.has-light-background {
 		}
 	}
 
-	&:not(.overview) {
-		h1,
-		h2 {
-			position: relative;
-		}
-
-		h2:not(.code-title) {
-			&::before,
-			&::after {
-				height: auto;
-				top: -.5em;
-				bottom: -.5em;
-				transform-origin: left center;
-				transform: translateX(-50%);
-			}
-			&::after {
-				background-image: linear-gradient(
-					180deg,
-					$color-accent 0%,
-					rgba($color-accent, 0) 50%,
-					$color-accent 100%);
-			}
-		}
-		h2.code-title {
-			&::after {
-				background-image: linear-gradient(
-					180deg,
-					$color-accent 0%,
-					rgba($color-accent, 0) 50%,
-					$color-accent 100%),
-					url(../images/clock.svg);
-				background-size: 100%, 50% 50%;
-				background-position: center, center center;
-				background-repeat: repeat-y, no-repeat;
-			}
-		}
-
-		.present {
-			> h1,
-			> h2 {
-				&::before,
-				&::after {
-					transition-delay: .75s;
-					opacity: 1;
-				}
-			}
-		}
+	[id*="sass-em"] ~ ul li {
+		margin-bottom: 0;
 	}
 }
