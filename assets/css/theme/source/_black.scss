@@ -217,12 +217,12 @@ section.has-light-background {
 					position: absolute;
 					right: 100%;
 					bottom: 37%;
-					padding-right: 1.5em;
+					padding-right: .618em;
 					text-align: right;
 					font-size: $mainFontSize * .618;
 					font-family: caption, -apple-system, sans-serif;
 					color: white;
-					opacity: .75;
+					opacity: .5;
 					transform: translateY(50%);
 				}
 			}
@@ -242,7 +242,7 @@ section.has-light-background {
 		$ratio: round( $ratio*100 ) / 100;
 		font-size: $ratio * 100%;
 		&::before {
-			content: " #{$ratio * 20}";
+			content: " #{$ratio * 1em}";
 		}
 	}
 
@@ -339,5 +339,26 @@ section.has-light-background {
 
 	[id*="sass-em"] ~ ul li {
 		margin-bottom: 0;
+	}
+
+	img {
+		&:first-child:nth-last-child(3) {
+			&,
+			& ~ img {
+				width: 29%;
+				display: inline-block;
+			}
+		}
+	}
+	[id*="stranded"] {
+		~ ul li {
+			position: relative;
+
+			button {
+				top: .125em;
+				bottom: auto;
+				left: -4em;
+			}
+		}
 	}
 }

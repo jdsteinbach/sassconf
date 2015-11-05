@@ -56,17 +56,18 @@ All intervals are exponents of the half-step.
 
 ## Typography & Modular Scales
 
-### <em>Literal</em> <span>Modular Scales</span>
+### <em>Single-Stranded</em> <span>Modular Scales</span>
 
   * Every interval is the same
-  * A musical half-step scale is literally modular *~play half-step scale~*
-  * A musical whole-step scale is literally modular *~play whole-step scale~*
+  * A musical half-step scale is literally modular <button id="scale-half-step" class="play-button">Play</button>
 
-### <em>Non-Literal</em> <span>Modular Scales</span>
+  * A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button">Play</button>
 
-  * “Quasi-Modular” or “Organic Modular”
-  * Major & minor scales are created by alternating whole- & half-step scales (WWHWWWH) / (WHWWHWW)
-  * These patterns repeat every octave, creating a non-literal / organic modular scale.
+
+### <em>Multi-Stranded</em> <span>Modular Scales</span>
+
+  * Major & minor scales are created by alternating whole & half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button">Play</button>
+  * These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button">Play</button>
 
 ### <em>Modular Scales</em><br> in <em>Sass</em>
 
@@ -136,12 +137,19 @@ All intervals are exponents of the half-step.
 </div>
 <button id="scale-major-triad" class="play-button">Play</button>
 
-### <em>Responsive</em> Musical Scales
+### <em>Responsive</em> <span>Musical Scales</span>
 
 More notes per octave: better for small screens
 
 Fewer notes per octave: better for large screens
 
+---
+
+![Broken Headline Size 1](images/facebook.jpg)
+![Broken Headline Size 2](images/entrepreneurs.jpg)
+![Broken Headline Size 3](images/improbability.jpg)
+
+---
 ## Intro to TypeTuner
 
 ### TypeTuner.com
@@ -174,3 +182,4 @@ Fewer notes per octave: better for large screens
 * [typetuner.com](http://typetuner.com)
 * [jdsteinbach.com/sassconf](http://jdsteinbach.com/sassconf/)
 * [webtypography.net](http://webtypography.net)
+* [A More Modern Scale for Web Typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography)

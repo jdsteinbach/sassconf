@@ -168,22 +168,23 @@
 
 <section>
 
-<h3 id="-em-literal-em-span-modular-scales-span-"><em>Literal</em> <span>Modular Scales</span></h3>
+<h3 id="-em-single-stranded-em-span-modular-scales-span-"><em>Single-Stranded</em> <span>Modular Scales</span></h3>
 <ul>
 <li>Every interval is the same</li>
-<li>A musical half-step scale is literally modular <em>~play half-step scale~</em></li>
-<li>A musical whole-step scale is literally modular <em>~play whole-step scale~</em></li>
+<li><p>A musical half-step scale is literally modular <button id="scale-half-step" class="play-button">Play</button></p>
+</li>
+<li><p>A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button">Play</button></p>
+</li>
 </ul>
 
 </section>
 
 <section>
 
-<h3 id="-em-non-literal-em-span-modular-scales-span-"><em>Non-Literal</em> <span>Modular Scales</span></h3>
+<h3 id="-em-multi-stranded-em-span-modular-scales-span-"><em>Multi-Stranded</em> <span>Modular Scales</span></h3>
 <ul>
-<li>“Quasi-Modular” or “Organic Modular”</li>
-<li>Major &amp; minor scales are created by alternating whole- &amp; half-step scales (WWHWWWH) / (WHWWHWW)</li>
-<li>These patterns repeat every octave, creating a non-literal / organic modular scale.</li>
+<li>Major &amp; minor scales are created by alternating whole &amp; half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button">Play</button></li>
+<li>These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button">Play</button></li>
 </ul>
 
 </section>
@@ -295,9 +296,14 @@
 
 <section>
 
-<h3 id="-em-responsive-em-musical-scales"><em>Responsive</em> Musical Scales</h3>
+<h3 id="-em-responsive-em-span-musical-scales-span-"><em>Responsive</em> <span>Musical Scales</span></h3>
 <p>More notes per octave: better for small screens</p>
 <p>Fewer notes per octave: better for large screens</p>
+</section><section>
+<p><img src="images/facebook.jpg" alt="Broken Headline Size 1">
+<img src="images/entrepreneurs.jpg" alt="Broken Headline Size 2">
+<img src="images/improbability.jpg" alt="Broken Headline Size 3"></p>
+</section><section>
 
 </section>
 
@@ -353,6 +359,7 @@
 <li><a href="http://typetuner.com">typetuner.com</a></li>
 <li><a href="http://jdsteinbach.com/sassconf/">jdsteinbach.com/sassconf</a></li>
 <li><a href="http://webtypography.net">webtypography.net</a></li>
+<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A More Modern Scale for Web Typography</a></li>
 </ul>
 
 </section>
@@ -391,12 +398,25 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-43397146-5', 'auto'); ga('send', 'pageview');
     </script>
     <script type="text/javascript">
-      var buttons = document.getElementsByTagName('button');
-      var buttons_length = buttons.length;
-      for ( var i = 0; i < buttons_length; i++ ) {
+      function does_file_exist(url) {
+          var http = new XMLHttpRequest();
+          http.open('HEAD', url, false);
+          http.send();
+          return http.status!=404;
+      }
+      var buttons = document.getElementsByTagName('button'),
+          b_length = buttons.length;
+      for ( var i = 0; i < b_length; i++ ) {
         buttons[i].addEventListener('click', function(e){
-          var id = e.target.id;
-          var audio = new Audio('/audio/'+id+'.mp3')
+          var id = e.target.id,
+              url = '/audio/'+id+'.mp3',
+              audio = null;
+          if ( does_file_exist(url) ) {
+            audio = new Audio(url);
+          } else {
+            audio = new Audio('http://soundbible.com/grab.php?id=1830&type=mp3');
+            audio.volume = .125;
+          }
           audio.play();
         });
       }
