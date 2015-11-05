@@ -149,7 +149,6 @@ Fewer notes per octave: better for large screens
 ![Broken Headline Size 2](images/entrepreneurs.jpg)
 ![Broken Headline Size 3](images/improbability.jpg)
 
----
 ## Intro to TypeTuner
 
 ### TypeTuner.com
