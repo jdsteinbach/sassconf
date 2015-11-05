@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en" class="notes">
 
   <head>
     <meta charset="utf-8">
@@ -40,36 +40,19 @@
 
     <div class="reveal">
 
-      <div class="slides">
-<section>
-<h1 id="-small-using-small-musical-scales-small-to-build-small-harmonious-typography"><small>Using</small> Musical Scales <small>to Build</small> Harmonious Typography</h1>
-
-</section>
-
-<section>
-
-<section>
-
+      <div class="content"><h1 id="-small-using-small-musical-scales-small-to-build-small-harmonious-typography"><small>Using</small> Musical Scales <small>to Build</small> Harmonious Typography</h1>
+<p>As a curious developer and an amateur designer, I’m very curious about the reasoning behind design decisions in web projects. I’m also very eager to automate those decisions when I can automate them well. The web is full of resources on reasoning behind design decisions. You can easily find resources on color theory, font pairing, and grid proportions. Resources on type scale (or choosing font sizes) are less available. And too often in workplace conversations, the best answer a developer gets from the designer is “I just picked font sizes that looked good.”</p>
+<p>This is where I brought in another area of aesthetics that I’m familiar with: music. As an amateur musician with more than average theory training, I had the idea the mathematical proportions in musical scales could be used as patterns for type scales in web design.</p>
 <h2 id="musical-intervals-math">Musical Intervals &amp; Math</h2>
-
-</section>
-
-<section>
-
-<h3 id="every-em-note-em-br-is-a-em-number-em-">Every <em>Note</em><br> Is a <em>Number</em></h3>
+<h3 id="every-em-note-em-is-a-em-number-em-">Every <em>Note</em> Is a <em>Number</em></h3>
 <p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
-</section><section>
+<hr>
 <p><img src="images/trombone.gif" alt="images/trombone.gif"></p>
-</section><section>
+<hr>
 <p><img src="images/harp.gif" alt="images/harp.gif"></p>
-</section><section>
+<hr>
 <p><img src="images/xylophone.gif" alt="images/xylophone.gif"></p>
-
-</section>
-
-<section>
-
-<h3 id="an-em-octave-em-br-increases-em-2-em-times-">An <em>Octave</em><br> Increases <em>2</em>&times;</h3>
+<h3 id="an-em-octave-em-increases-em-2-em-times-">An <em>Octave</em> Increases <em>2</em>&times;</h3>
 <table>
 <thead>
 <tr>
@@ -84,15 +67,10 @@
 </tr>
 </tbody>
 </table>
-</section><section>
+<hr>
 <p><img src="images/wave.svg" alt="images/wave.svg">
 <img src="images/wave-x2.svg" alt="images/wave-x2.svg"></p>
-
-</section>
-
-<section>
-
-<h3 id="a-em-fifth-em-br-increases-em-1-5-em-times-">A <em>Fifth</em><br> Increases ~<em>1.5</em>&times;</h3>
+<h3 id="a-em-fifth-em-increases-em-1-5-em-times-">A <em>Fifth</em> Increases ~<em>1.5</em>&times;</h3>
 <table>
 <thead>
 <tr>
@@ -107,18 +85,13 @@
 </tr>
 </tbody>
 </table>
-</section><section>
+<hr>
 <p><img src="images/wave.svg" alt="images/wave.svg">
 <img src="images/wave-x1.5.svg" alt="images/wave-x1.5.svg"></p>
-
-</section>
-
-<section>
-
 <h3 id="a-em-half-step-em-increases-em-1-0595-em-times-">A <em>Half-Step</em> Increases <em>1.0595</em>&times;</h3>
 <p>The half-step is the building block of scales.</p>
 <p>All intervals are exponents of the half-step.</p>
-</section><section>
+<hr>
 <table>
 <thead>
 <tr>
@@ -153,21 +126,7 @@
 </tr>
 </tbody>
 </table>
-
-</section>
-
-</section>
-
-<section>
-
-<section>
-
 <h2 id="typography-modular-scales">Typography &amp; Modular Scales</h2>
-
-</section>
-
-<section>
-
 <h3 id="-em-single-stranded-em-span-modular-scales-span-"><em>Single-Stranded</em> <span>Modular Scales</span></h3>
 <ul>
 <li>Every interval is the same</li>
@@ -176,21 +135,11 @@
 <li><p>A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button">Play</button></p>
 </li>
 </ul>
-
-</section>
-
-<section>
-
 <h3 id="-em-multi-stranded-em-span-modular-scales-span-"><em>Multi-Stranded</em> <span>Modular Scales</span></h3>
 <ul>
 <li>Major &amp; minor scales are created by alternating whole &amp; half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button">Play</button></li>
 <li>These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button">Play</button></li>
 </ul>
-
-</section>
-
-<section>
-
 <h3 id="-em-modular-scales-em-br-in-em-sass-em-"><em>Modular Scales</em><br> in <em>Sass</em></h3>
 <ul>
 <li><a href="http://www.modularscale.com/">Modular Scale</a></li>
@@ -200,32 +149,13 @@
 <li><a href="http://www.gridlover.net/">Gridlover</a></li>
 <li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a> (“double-stranded” modular scale)</li>
 </ul>
-
-</section>
-
-</section>
-
-<section>
-
-<section>
-
 <h2 id="see-hear">See &amp; Hear</h2>
-
-</section>
-
-<section>
-
 <h3 id="interval-em-octave-em-">Interval: <em>Octave</em></h3>
 <p><div class="text-block interval octave">
   <p class="heading-octave">Notes Are Numbers</p>
   <p class="paragraph-octave">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div></p>
 <button id="interval-octave" class="play-button">Play</button>
-
-
-</section>
-
-<section>
 
 <h3 id="interval-em-fifth-em-">Interval: <em>Fifth</em></h3>
 <p><div class="text-block interval fifth">
@@ -234,22 +164,12 @@
 </div></p>
 <button id="interval-fifth" class="play-button">Play</button>
 
-
-</section>
-
-<section>
-
 <h3 id="interval-em-third-em-">Interval: <em>Third</em></h3>
 <p><div class="text-block interval third">
   <p class="heading-third">Notes Are Numbers</p>
   <p class="paragraph-third">Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
 </div></p>
 <button id="interval-third" class="play-button">Play</button>
-
-
-</section>
-
-<section>
 
 <h3 id="scale-em-major-scale-em-">Scale: <em>Major Scale</em></h3>
 <p><div class="text-block scale major-scale">
@@ -261,11 +181,6 @@
 </div></p>
 <button id="scale-major" class="play-button">Play</button>
 
-
-</section>
-
-<section>
-
 <h3 id="scale-em-pentatonic-em-">Scale: <em>Pentatonic</em></h3>
 <p><div class="text-block scale pentatonic">
   <p class="heading-1">Heading 1</p>
@@ -275,11 +190,6 @@
   <p class="paragraph">Paragraph</p>
 </div></p>
 <button id="scale-pentatonic" class="play-button">Play</button>
-
-
-</section>
-
-<section>
 
 <h3 id="scale-em-major-triad-em-">Scale: <em>Major Triad</em></h3>
 <p><div class="text-block scale major-triad">
@@ -291,34 +201,15 @@
 </div></p>
 <button id="scale-major-triad" class="play-button">Play</button>
 
-
-</section>
-
-<section>
-
 <h3 id="-em-responsive-em-span-musical-scales-span-"><em>Responsive</em> <span>Musical Scales</span></h3>
 <p>More notes per octave: better for small screens</p>
 <p>Fewer notes per octave: better for large screens</p>
-</section><section>
+<hr>
 <p><img src="images/facebook.jpg" alt="Broken Headline Size 1">
 <img src="images/entrepreneurs.jpg" alt="Broken Headline Size 2">
 <img src="images/improbability.jpg" alt="Broken Headline Size 3"></p>
-</section><section>
-
-</section>
-
-</section>
-
-<section>
-
-<section>
-
+<hr>
 <h2 id="intro-to-typetuner">Intro to TypeTuner</h2>
-
-</section>
-
-<section>
-
 <h3 id="typetuner-com">TypeTuner.com</h3>
 <pre><code>@include set-hierarchy( $list );
 @include add-breakpoint(
@@ -330,30 +221,11 @@
 );
 @include remove-breakpoint( $label );
 @include type-tune( extend | class );
-</code></pre>
-</section>
-
-</section>
-
-<section>
-
-<section>
-
-<h2 id="thanks-">Thanks!</h2>
-
-</section>
-
-<section>
-
+</code></pre><h2 id="thanks-">Thanks!</h2>
 <h3 id="james-steinbach">James Steinbach</h3>
 <p><a href="https://jdsteinbach.com">jdsteinbach.com</a></p>
 <p><a href="https://twitter.com/jdsteinbach/">@jdsteinbach</a></p>
 <p><a href="https://github.com/jdsteinbach/">github.com/jdsteinbach</a></p>
-
-</section>
-
-<section>
-
 <h3 id="resources">Resources</h3>
 <ul>
 <li><a href="http://typetuner.com">typetuner.com</a></li>
@@ -361,39 +233,10 @@
 <li><a href="http://webtypography.net">webtypography.net</a></li>
 <li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A More Modern Scale for Web Typography</a></li>
 </ul>
-
-</section>
-
-</section>
 </div>
 
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-      <script src="js/reveal.js"></script>
-
-    <script>
-
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        width: 960,
-
-        transition: 'convex', // none/fade/slide/convex/concave/zoom
-
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/zoom-js/zoom.js', async: true }
-        ]
-
-      });
-
-    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-43397146-5', 'auto'); ga('send', 'pageview');
     </script>

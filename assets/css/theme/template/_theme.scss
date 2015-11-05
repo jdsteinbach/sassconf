@@ -58,6 +58,9 @@ body {
 	font-feature-settings: "kern", "liga", "smcp", "pnum";
 	margin: $headingMargin;
 	text-transform: lowercase;
+	line-height: $headingLineHeight;
+	letter-spacing: $headingLetterSpacing;
+	text-shadow: $headingTextShadow;
 
 	em {
 		font-family: $headingFont;
@@ -142,6 +145,7 @@ body {
 .reveal li {
 	margin-bottom: .618 * .618em;
 }
+
 .reveal dt {
 	font-weight: bold;
 }
@@ -274,7 +278,7 @@ body {
  * IMAGES
  *********************************************/
 
-.reveal section img {
+.reveal img {
 	display: block;
 	margin: 15px auto;
 	background: rgba($mainColor,.125);

@@ -58,6 +58,68 @@ section.has-light-background {
 
 // ---------------------------------------------
 
+.notes {
+	text-align: center;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.content {
+		padding-bottom: 1.618 * 2.618em !important;
+	}
+
+	h1, h2, h3 {
+		padding: 1em .5em 0;
+		width: 100%;
+	}
+
+	h2 {
+		background-color: $mainColor;
+		color: $backgroundColor;
+		margin-top: 2em;
+		padding-bottom: 1em;
+		text-shadow: none !important;
+	}
+
+	h3 {
+		margin-top: 1em;
+		border-top: 1px solid $mainColor;
+	}
+
+	h2 + h3 {
+		border-top: 0;
+		margin-top: 0;
+	}
+
+	hr {
+		display: none;
+	}
+
+	p,
+	li {
+		text-align: left
+	}
+
+	li {
+		margin-bottom: .618em;
+	}
+
+	[id="see-hear"] {
+		~ .play-button {
+			position: static;
+			margin: 0 auto;
+		}
+	}
+
+	#james-steinbach {
+		background-color: transparent;
+		color: $mainColor;
+		text-shadow: $headingTextShadow;
+		padding-bottom: 0;
+	}
+}
+
 .reveal {
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
@@ -350,6 +412,7 @@ section.has-light-background {
 			}
 		}
 	}
+
 	[id*="stranded"] {
 		~ ul li {
 			position: relative;

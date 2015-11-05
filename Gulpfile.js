@@ -4,6 +4,7 @@
   /* Required packages */
   var gulp         = require('gulp');
   var glob         = require('glob');
+  var tap          = require('gulp-tap');
   var browserSync  = require('browser-sync');
   var reload       = browserSync.reload;
   var sass         = require('gulp-sass');
@@ -44,6 +45,19 @@
       .pipe(reveal({
         title: 'Using Musical Scales to Build Harmonious Typography',
         author: 'James Steinbach',
+        index: true,
+        description: 'SassConf 2015',
+        analytics: 'UA-43397146-5'
+      }))
+      .pipe(gulp.dest('.'))
+      .pipe(reload({stream: true}));
+
+    gulp.src(_md_dir + 'notes.md')
+      .pipe(markdown())
+      .pipe(reveal({
+        title: 'Using Musical Scales to Build Harmonious Typography',
+        author: 'James Steinbach',
+        index: false,
         description: 'SassConf 2015',
         analytics: 'UA-43397146-5'
       }))
