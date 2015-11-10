@@ -38,6 +38,7 @@ body {
 // .reveal h4,
 // .reveal h5,
 .reveal h2 {
+	@extend %tt-title;
 	margin: $headingMargin;
 	color: $headingColor;
 
@@ -54,7 +55,7 @@ body {
 }
 
 .reveal h3 {
-	// font-weight: bold;
+	@extend %tt-subtitle;
 	font-feature-settings: "kern", "liga", "smcp", "pnum";
 	margin: $headingMargin;
 	text-transform: lowercase;
@@ -74,6 +75,12 @@ body {
 	}
 }
 
+.reveal {
+	p, td, li {
+		@extend %tt-p;
+	}
+}
+
 .reveal h1 {font-size: $heading1Size; }
 .reveal h2 {font-size: $heading2Size; }
 .reveal h3 {font-size: $heading2Size; }
@@ -90,7 +97,6 @@ body {
 
 .reveal p {
 	margin: $blockMargin auto;
-	line-height: 1.3;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -116,6 +122,10 @@ body {
 
 	text-align: left;
 	margin: 0 0 0 1em;
+
+	li {
+		line-height: 1.125;
+	}
 }
 
 .reveal ol {

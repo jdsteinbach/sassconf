@@ -72,12 +72,14 @@
     });
   });
 
-  gulp.task('build', ['md', 'sass',]);
+//  gulp.task('build', ['md', 'sass',]);
+  gulp.task('build', [ 'sass',]);
 
-  gulp.task('watch', ['md', 'sass', 'serve'], function() {
+//  gulp.task('watch', ['md', 'sass', 'serve'], function() {
+  gulp.task('watch', [ 'sass', 'serve'], function() {
     gulp.watch(_css_dir + '**/*.scss', ['sass']);
-    gulp.watch(_md_dir + '**/*.md', ['md']);
-    gulp.watch('**/*.mustache', ['md']);
+  //  gulp.watch(_md_dir + '**/*.md', ['md']);
+  //  gulp.watch('**/*.mustache', ['md']);
     gulp.watch('index.html').on('change', reload);
   });
 

@@ -256,6 +256,9 @@
               audio = null;
           if ( does_file_exist(url) ) {
             audio = new Audio(url);
+            if ( this.dataset.speed ) {
+              audio.playbackRate = this.dataset.speed;
+            }
           } else {
             audio = new Audio('http://soundbible.com/grab.php?id=1830&type=mp3');
             audio.volume = .125;

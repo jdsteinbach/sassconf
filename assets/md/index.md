@@ -59,15 +59,15 @@ All intervals are exponents of the half-step.
 ### <em>Single-Stranded</em> <span>Modular Scales</span>
 
   * Every interval is the same
-  * A musical half-step scale is literally modular <button id="scale-half-step" class="play-button">Play</button>
+  * A musical half-step scale is literally modular <button id="scale-half-step" class="play-button" data-speed="1.25">Play</button>
 
-  * A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button">Play</button>
+  * A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button" data-speed="1.25">Play</button>
 
 
 ### <em>Multi-Stranded</em> <span>Modular Scales</span>
 
-  * Major & minor scales are created by alternating whole & half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button">Play</button>
-  * These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button">Play</button>
+  * Major & minor scales are created by alternating whole & half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button" data-speed="1.5">Play</button>
+  * These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button" data-speed="1.5">Play</button>
 
 ### <em>Modular Scales</em><br> in <em>Sass</em>
 
@@ -76,7 +76,7 @@ All intervals are exponents of the half-step.
   * [Typesettings](http://typesettings.io/)
   * [Type Scale](http://type-scale.com/)
   * [Gridlover](http://www.gridlover.net/)
-  * [ALA: More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography) (“double-stranded” modular scale)
+  * [ALA: More Meaningful Typography](http://alistapart.com/article/more-meaningful-typography)
 
 ## See & Hear
 
@@ -113,7 +113,7 @@ All intervals are exponents of the half-step.
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
-<button id="scale-major" class="play-button">Play</button>
+<button id="scale-major" class="play-button" data-speed="1.5">Play</button>
 
 ### Scale: <em>Pentatonic</em>
 
@@ -124,7 +124,7 @@ All intervals are exponents of the half-step.
   <p class="blockquote">Blockquote</p>
   <p class="paragraph">Paragraph</p>
 </div>
-<button id="scale-pentatonic" class="play-button">Play</button>
+<button id="scale-pentatonic" class="play-button" data-speed="1.25">Play</button>
 
 ### Scale: <em>Major Triad</em>
 
