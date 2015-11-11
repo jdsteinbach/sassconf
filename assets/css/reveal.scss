@@ -534,6 +534,41 @@ body {
 
 
 /*********************************************
+ * RANDOM TRANSITION
+ *********************************************/
+.reveal.random {
+	@for $i from 1 through 6 {
+		@for $j from 1 through 12 {
+			section {
+				transition: transform random(2000)*1ms ease-in-out !important;
+			}
+
+			.slides > section:nth-child(#{$i}) {
+				> section:nth-child(#{$j}) {
+					transition-duration: random(2000)*1ms !important;
+
+					// &.past {
+					// 	transform: translate3d(random(10)*-10%, 0, 0) rotateY(random(9)*10deg) translate3d(random(10)*-10%, 0, 0) !important;
+					// }
+					// &.future {
+					// 	transform: translate3d(random(10)*10%, 0, 0) rotateY(random(9)*-10deg) translate3d(random(10)*10%, 0, 0) !important;
+					// }
+
+					// .reveal .slides>section>section[data-transition=random].past,
+					// .reveal.random .slides>section>section:not([data-transition]).past {
+					// 	transform: translate3d(0, random(8)*-10%, 0) rotateX(random(7)*-10deg) translate3d(0, random(8)*-10%, 0);
+					// }
+					// .reveal .slides>section>section[data-transition=random].future,
+					// .reveal.random .slides>section>section:not([data-transition]).future {
+					// 	transform: translate3d(0, random(8)*10%, 0) rotateX(random(7)*10deg) translate3d(0, random(8)*10%, 0);
+					// }
+				}
+			}
+		}
+	}
+}
+
+/*********************************************
  * ZOOM TRANSITION
  *********************************************/
 
