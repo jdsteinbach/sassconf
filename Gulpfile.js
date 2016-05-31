@@ -40,17 +40,17 @@
   });
 
   gulp.task('md', function() {
-    gulp.src(_md_dir + 'index.md')
-      .pipe(markdown())
-      .pipe(reveal({
-        title: 'Using Musical Scales to Build Harmonious Typography',
-        author: 'James Steinbach',
-        index: true,
-        description: 'SassConf 2015',
-        analytics: 'UA-43397146-5'
-      }))
-      .pipe(gulp.dest('.'))
-      .pipe(reload({stream: true}));
+   // gulp.src(_md_dir + 'index.md')
+   //   .pipe(markdown())
+   //   .pipe(reveal({
+   //     title: 'Using Musical Scales to Build Harmonious Typography',
+   //     author: 'James Steinbach',
+   //     index: true,
+   //     description: 'SassConf 2015',
+   //     analytics: 'UA-43397146-5'
+   //   }))
+   //   .pipe(gulp.dest('.'))
+   //   .pipe(reload({stream: true}));
 
     gulp.src(_md_dir + 'notes.md')
       .pipe(markdown())
@@ -78,7 +78,7 @@
 //  gulp.task('watch', ['md', 'sass', 'serve'], function() {
   gulp.task('watch', [ 'sass', 'serve'], function() {
     gulp.watch(_css_dir + '**/*.scss', ['sass']);
-  //  gulp.watch(_md_dir + '**/*.md', ['md']);
+    gulp.watch(_md_dir + '**/*.md', ['md']);
   //  gulp.watch('**/*.mustache', ['md']);
     gulp.watch('index.html').on('change', reload);
   });

@@ -42,17 +42,20 @@
 
       <div class="content"><h1 id="-small-using-small-musical-scales-small-to-build-small-harmonious-typography"><small>Using</small> Musical Scales <small>to Build</small> Harmonious Typography</h1>
 <p>As a curious developer and an amateur designer, I’m very curious about the reasoning behind design decisions in web projects. I’m also very eager to automate those decisions when I can automate them well. The web is full of resources on reasoning behind design decisions. You can easily find resources on color theory, font pairing, and grid proportions. Resources on type scale (or choosing font sizes) are less available. And too often in workplace conversations, the best answer a developer gets from the designer is “I just picked font sizes that looked good.”</p>
-<p>This is where I brought in another area of aesthetics that I’m familiar with: music. As an amateur musician with more than average theory training, I had the idea the mathematical proportions in musical scales could be used as patterns for type scales in web design.</p>
+<p>This is where I brought in another area of aesthetics that I’m familiar with: music. As an amateur musician with music theory training, I had the idea that the mathematical proportions in musical scales could be used as patterns for type scales in web design.</p>
 <h2 id="musical-intervals-math">Musical Intervals &amp; Math</h2>
+<p>We’ll begin by looking at the relationship between music and math. Every musical note is a specific frequency and intervals (distances between two notes) are measurable, predictable distances.</p>
 <h3 id="every-em-note-em-is-a-em-number-em-">Every <em>Note</em> Is a <em>Number</em></h3>
-<p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz).</p>
-<hr>
+<p>Every musical note is a number: a frequency vibrating a certain number of times per second (measured in hertz). Whenever an orchestra tunes to Concert A, they usually tune to 440Hz. When a beginning piano student learns to start playing at Middle C, that note is roughly 131Hz (on a well-tuned piano). That’s what the process of tuning an instrument does: it ensures that when the musician plays a certain note, a specific frequency is heard by the audience.</p>
+<p>Of course, you probably already know that musical pitch is related closely to measurable distance. The longer the distance of the instrument, the lower the pitch. That&#39;s how a trombone works:</p>
 <p><img src="images/trombone.gif" alt="images/trombone.gif"></p>
-<hr>
+<p>On a harp, the longest strings produce the lowest notes; the shortest strings produces the highest notes.</p>
 <p><img src="images/harp.gif" alt="images/harp.gif"></p>
-<hr>
+<p>And the largest (long and wide) keys on a xylophone produces low notes, while the smallest keys produce the highest notes.</p>
 <p><img src="images/xylophone.gif" alt="images/xylophone.gif"></p>
+<p>Since all musical notes are measured by specific frequencies, it follows that all musical intervals are measurable mathematical proportions. Every time you play the same musical interval (regardless of which octave or key you play in), the same mathematical proportion governs the distance between the frequencies of the two notes.</p>
 <h3 id="an-em-octave-em-increases-em-2-em-times-">An <em>Octave</em> Increases <em>2</em>&times;</h3>
+<p>Every time you play up an octave, the frequency doubles. If you move down an octave from your starting note, the frequency is divided by two.</p>
 <table>
 <thead>
 <tr>
@@ -67,10 +70,11 @@
 </tr>
 </tbody>
 </table>
-<hr>
+<p>The following wave patterns represent two notes an octave apart. The bottom wave is twice the frequency of the top wave (it has twice as many cycles per second), so it would be exactly one octave higher than the other wave.</p>
 <p><img src="images/wave.svg" alt="images/wave.svg">
 <img src="images/wave-x2.svg" alt="images/wave-x2.svg"></p>
 <h3 id="a-em-fifth-em-increases-em-1-5-em-times-">A <em>Fifth</em> Increases ~<em>1.5</em>&times;</h3>
+<p>Every time you play notes that are a fifth apart, the frequency of the higher note is 1.5&times; the frequency of the lower note. If you move down a fifth from your starting note, the frequency of the lower note is divided by 1.5.</p>
 <table>
 <thead>
 <tr>
@@ -85,13 +89,14 @@
 </tr>
 </tbody>
 </table>
-<hr>
+<p>These wave patterns represent two notes a fifth apart. The bottom wave is 1.5&times; the frequency of the top wave, so it would be exactly one fifth hihger than the other wave.</p>
 <p><img src="images/wave.svg" alt="images/wave.svg">
 <img src="images/wave-x1.5.svg" alt="images/wave-x1.5.svg"></p>
 <h3 id="a-em-half-step-em-increases-em-1-0595-em-times-">A <em>Half-Step</em> Increases <em>1.0595</em>&times;</h3>
-<p>The half-step is the building block of scales.</p>
-<p>All intervals are exponents of the half-step.</p>
-<hr>
+<p>This is a pretty precise number, but don’t worry: you won’t be required to memorize it. The half-step is important because it’s the building block for all other intervals and scales.</p>
+<p>I should clarify that the half-step is the building block for traditional western scales: the kind of music you usually hear on the radio, at restaurants, in the background of movies and television.</p>
+<p>If you play up and down a piano using both black and white key, you‘ll be playing a half-step scale. All intervals are multiple half-steps. In mathematical terms, all intervals are exponents of the half-step interval.</p>
+<p>The following table shows how to get from A to B two different ways. The first two lines show how to calculate the interval by multiplying by a half-step twice. The final line shows how to calculate the interval by multiplying by a half-step squared.</p>
 <table>
 <thead>
 <tr>
@@ -126,30 +131,28 @@
 </tr>
 </tbody>
 </table>
+<p>All musical intervals are mathematically definable and predictable. Therefore, the scales we play by combining those intervals follow set mathematical patterns as well.</p>
 <h2 id="typography-modular-scales">Typography &amp; Modular Scales</h2>
+<p>Creating visual hierarchy with typography is also a matter of following set mathematical patterns. Let’s take a look at some existing ideas and tools for building type scales with mathematical patterns</p>
 <h3 id="-em-single-stranded-em-span-modular-scales-span-"><em>Single-Stranded</em> <span>Modular Scales</span></h3>
-<ul>
-<li>Every interval is the same</li>
-<li><p>A musical half-step scale is literally modular <button id="scale-half-step" class="play-button">Play</button></p>
-</li>
-<li><p>A musical whole-step scale is literally modular <button id="scale-whole-step" class="play-button">Play</button></p>
-</li>
-</ul>
+<p>In a single-stranded modular scale, every interval is the same. You can quickly create a single-stranded modular scale by picking a proportion (1.5&times;) and a base font size (18px), then each font size is the proportion times the previous size.</p>
+<p>A musical half-step scale is a single-stranded modular scale: every interval is 1.0595. <button id="scale-half-step" class="play-button" data-speed="1.25">Play</button></p>
+<p>A musical whole-step scale is also a single-stranded modular scale: every interval is 1.0595<sup>2</sup>. <button id="scale-whole-step" class="play-button" data-speed="1.25">Play</button></p>
 <h3 id="-em-multi-stranded-em-span-modular-scales-span-"><em>Multi-Stranded</em> <span>Modular Scales</span></h3>
-<ul>
-<li>Major &amp; minor scales are created by alternating whole &amp; half steps (WWHWWWH) / (WHWWHWW) <button id="scale-major" class="play-button">Play</button></li>
-<li>These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-minor" class="play-button">Play</button></li>
-</ul>
+<p>A single-stranded scale uses a single interval as a multiplier to create all the measurements. A multi-stranded modular scale uses patterns of intervals, or multiple starting points for similar intervals, or a little of both.</p>
+<p>Major &amp; minor scales are created by alternating whole &amp; half steps (WWHWWWH) / (WHWWHWW). These patterns repeat every octave, creating a mult-stranded modular scale. <button id="scale-major" class="play-button" data-speed="1.5">Play</button> <button id="scale-minor" class="play-button" data-speed="1.5">Play</button></p>
 <h3 id="-em-modular-scales-em-br-in-em-sass-em-"><em>Modular Scales</em><br> in <em>Sass</em></h3>
+<p>There are several Sass libraries and online tools available for creating modular type scales. All of them can create single-stranded scales. The first and last items also create multi-stranded modular scales quite handily as well.</p>
 <ul>
 <li><a href="http://www.modularscale.com/">Modular Scale</a></li>
 <li><a href="https://sassline.com/">Sassline</a></li>
 <li><a href="http://typesettings.io/">Typesettings</a></li>
 <li><a href="http://type-scale.com/">Type Scale</a></li>
 <li><a href="http://www.gridlover.net/">Gridlover</a></li>
-<li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a> (“double-stranded” modular scale)</li>
+<li><a href="http://alistapart.com/article/more-meaningful-typography">ALA: More Meaningful Typography</a></li>
 </ul>
 <h2 id="see-hear">See &amp; Hear</h2>
+<p>In this section, we’ll look at font sizes created with musical intervals, while listening to audio samples of those intervals.</p>
 <h3 id="interval-em-octave-em-">Interval: <em>Octave</em></h3>
 <p><div class="text-block interval octave">
   <p class="heading-octave">Notes Are Numbers</p>
@@ -202,26 +205,30 @@
 <button id="scale-major-triad" class="play-button">Play</button>
 
 <h3 id="-em-responsive-em-span-musical-scales-span-"><em>Responsive</em> <span>Musical Scales</span></h3>
-<p>More notes per octave: better for small screens</p>
-<p>Fewer notes per octave: better for large screens</p>
-<hr>
+<p>Of course, we can’t really talk web design without advice about dealing with a wide variety of screen sizes. It just so happens that we can use certain musical scales to optimize the type scale for the screen size.</p>
+<p>A scale with more notes per octave is better for small screens. It provides a distinct visual hierarchy while increasing font sizes more slowly to conserve screen space&hellip; and to avoid headline problems.</p>
 <p><img src="images/facebook.jpg" alt="Broken Headline Size 1">
 <img src="images/entrepreneurs.jpg" alt="Broken Headline Size 2">
 <img src="images/improbability.jpg" alt="Broken Headline Size 3"></p>
-<hr>
+<p>Scale with fewer notes per octave, however, are better for large screens. The font sizes increase more quickly up the scale to advantage of the larger screen and wider layout.</p>
 <h2 id="intro-to-typetuner">Intro to TypeTuner</h2>
+<p>I’ve written a small Sass library to automate the creation of type scales based on musical scales: TypeTuner. The following Sass mixins provide developers access to its powerful musical math</p>
 <h3 id="typetuner-com">TypeTuner.com</h3>
 <pre><code>@include set-hierarchy( $list );
-@include add-breakpoint(
+</code></pre><p>The <code>set-hierarchy()</code> mixin takes a list of labels. These are your labels for the steps in your font size hierarchy. This mixin will replace the default list (<code>sm, p, bq, ssh, sh, h, hero</code>) with the list you pass it.  Order your labels from smallest to largest.</p>
+<pre><code>@include add-breakpoint(
   $label,
   $min-width,
   $font-size,
   $line-height,
   $scale
 );
-@include remove-breakpoint( $label );
-@include type-tune( extend | class );
-</code></pre><h2 id="thanks-">Thanks!</h2>
+</code></pre><p>The <code>add-breakpoint()</code> mixin adds a breakpoint to TypeTuner’s math with the following parameters. <code>$label</code> acts as a key or unique identifier for this breakpoint. <code>$min-width</code> is the min-width for the media query. <code>$font-size</code> is the base font-size for body copy. <code>$line-height</code> is the base line-height for body copy. These two numbers form a vertical rhythm to which all TypeTuner’s font styles are aligned. Finally, <code>$scale</code> is the name of one of the scales provided in the default <a href="https://github.com/jdsteinbach/typetuner/blob/master/variables/_musical-scales.scss#L22-L39"><code>$scales</code> map</a>.</p>
+<pre><code>@include remove-breakpoint( $label );
+</code></pre><p>If you want to remove a breakpoint and all its associate data, pass its label as a parameter to <code>remove-breakpoint()</code>. This mixin is useful for clearing out the <a href="https://github.com/jdsteinbach/typetuner/blob/master/variables/_breakpoint-defaults.scss">default options</a>.</p>
+<pre><code>@include type-tune( &#39;extend&#39; | &#39;class&#39; );
+</code></pre><p>This mixin creates all the font-size and line-height properties for each of your labels at each of your breakpoints. It takes a single parameter: the word <code>extend</code> or <code>class</code>. If you choose <code>extend</code>, all the output selectors will be your labels list items prefixed with <code>%tt-</code>. If you choose <code>class</code>, the selectors will be your labels prefixed with <code>.tt-</code>.</p>
+<h2 id="thanks-">Thanks!</h2>
 <h3 id="james-steinbach">James Steinbach</h3>
 <p><a href="https://jdsteinbach.com">jdsteinbach.com</a></p>
 <p><a href="https://twitter.com/jdsteinbach/">@jdsteinbach</a></p>
