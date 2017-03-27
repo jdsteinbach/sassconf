@@ -32,6 +32,16 @@
     "postcss-property-sorter": "^0.3.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.9.3"
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.10",
+    "glob": "^5.0.15",
+    "gulp": "^3.9.1",
+    "gulp-haml": "^0.1.6",
+    "gulp-markdown": "^1.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-reveal": "git+https://github.com/jdsteinbach/gulp-reveal.git",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "markdown": "^0.5.0"
   }
 }

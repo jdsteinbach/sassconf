@@ -360,3 +360,20 @@ body {
 .reveal .slide-number {
   color: $linkColor;
 }
+
+.footer-link,
+.footer-twitter {
+	position: absolute;
+	bottom: .618em;
+	left: .618em;
+	font-size: .618em;
+}
+
+.footer-twitter {
+	left: auto;
+	right: .618em;
+
+	.fancy {
+		font-family: $mainFont;
+	}
+}

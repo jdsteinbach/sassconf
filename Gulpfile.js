@@ -12,7 +12,6 @@
   var markdown     = require('gulp-markdown');
   var postcss      = require('gulp-postcss');
   var autoprefixer = require('autoprefixer');
-  var sorter       = require('postcss-property-sorter');
 
   /* Environment variables */
   var _assets_dir = 'assets/';
@@ -21,9 +20,6 @@
 
   gulp.task('sass', function() {
     var processors = [
-      sorter({
-        plan: 'csscomb'
-      }),
       autoprefixer({
         browsers: ['last 3 versions'],
         cascade: false
